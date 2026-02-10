@@ -32,7 +32,7 @@ body {
     justify-content: center;
     padding: 20px;
     border-radius: 20px;
-    max-width: 360px;
+    max-width: 324px;
     width: 100%;
     box-shadow: 10px 10px 2px black;
 }
@@ -42,37 +42,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px; /* not working. why? */
-    margin-bottom: 28px;
+    overflow: hidden;
+    border-radius: 10px; /* funciona só com overflow: hidden */
+    margin-bottom: 25px;
+    
 }
 
 .cabeçário {
     background-color: hsl(47, 88%, 63%);
     max-width: 27%;
-    padding: 2px;
+    padding: 4px;
     text-align: center;
     font-weight: 900;
     border-radius: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .corpoh {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 
 .título {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
     margin-bottom: 15px;
 }
 
 .corpo {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     color: hsl(0, 0%, 42%);
     margin-bottom: 30px;
+}
+
+.rodapé {
+    display: flex;
+    
 }
 
 .autor {
@@ -80,10 +87,12 @@ body {
     height: 30px;
     border-radius: 50%;
     margin-right: 10px;
-    font-weight: bold;
+    float: left;
 }
 
 .autorr {
     font-size: 14px;
     font-weight: 900;
-} /* Não lembro como alinhar com a imagem */
+    float: left;
+    padding-top: 5px; /* não lembrava do float e padding, tive que consultar. */
+} 
